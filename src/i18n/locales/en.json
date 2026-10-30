@@ -1,0 +1,341 @@
+{
+  "app": {
+    "name": "Confluence Inbox",
+    "tagline": "Every channel, one candidate thread",
+    "org": "HEADFOUND Talent"
+  },
+  "topbar": {
+    "viewWorkspace": "Workspace",
+    "viewBlueprint": "Blueprint",
+    "live": "Live",
+    "paused": "Paused",
+    "liveOn": "Live updates on",
+    "liveOff": "Live updates paused",
+    "toggleList": "Toggle candidate list",
+    "toggleTheme": "Toggle theme",
+    "themeDark": "Dark theme",
+    "themeLight": "Light theme"
+  },
+  "channel": {
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "email": "Email",
+    "sms": "SMS",
+    "call": "Call",
+    "hint": {
+      "whatsapp": "Delivered instantly. Best for quick confirmations.",
+      "linkedin": "InMail credits apply. No file attachments.",
+      "email": "Threaded reply. Attachments up to 20 MB.",
+      "sms": "Works offline for the candidate. Billed per segment.",
+      "call": "Dial out. The call is recorded and transcribed."
+    },
+    "health": {
+      "connected": "Connected",
+      "degraded": "Degraded",
+      "unavailable": "Unavailable",
+      "not_linked": "Not linked"
+    },
+    "blockedReason": {
+      "degraded": "Delivery is currently degraded",
+      "unavailable": "Not reachable on this channel",
+      "not_linked": "No handle on file for this candidate"
+    }
+  },
+  "stage": {
+    "sourced": "Sourced",
+    "screening": "Screening",
+    "interview": "Interview",
+    "offer": "Offer",
+    "hired": "Hired",
+    "rejected": "Rejected"
+  },
+  "delivery": {
+    "queued": "Sending",
+    "sent": "Sent",
+    "delivered": "Delivered",
+    "read": "Read",
+    "failed": "Failed"
+  },
+  "time": {
+    "now": "now",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "minutes": "{{count}}m",
+    "hours": "{{count}}h",
+    "days": "{{count}}d",
+    "dueToday": "Due today",
+    "dueTomorrow": "Due tomorrow",
+    "dueInDays": "Due in {{count}}d",
+    "overdueByDays": "Overdue by {{count}}d",
+    "momentsLater": "moments later",
+    "hoursLater": "{{count}}h later",
+    "daysLater": "{{count}}d later",
+    "ago": "{{value}} ago"
+  },
+  "file": {
+    "kilobytes": "{{value}} KB",
+    "megabytes": "{{value}} MB"
+  },
+  "candidateList": {
+    "title": "Candidates",
+    "counter": "{{shown}} of {{total}}",
+    "searchPlaceholder": "Search people and every message",
+    "viewAll": "All",
+    "viewUnread": "Unread",
+    "viewWaiting": "Waiting",
+    "emptyTitle": "Nothing here",
+    "emptyDescription": "No candidates match the current filters.",
+    "noMatchTitle": "No matches",
+    "noMatchDescription": "No candidate or message matches this search. The search covers every channel, including call transcripts.",
+    "resetFilters": "Reset filters",
+    "needsReply": "Needs reply",
+    "pin": "Pin candidate",
+    "unpin": "Unpin candidate",
+    "noMessages": "No messages yet",
+    "openList": "Candidates"
+  },
+  "filters": {
+    "label": "Filters",
+    "sortLabel": "Sort candidates",
+    "sortRecent": "Most recent",
+    "sortUnread": "Unread first",
+    "sortName": "Name A–Z",
+    "stageHeading": "Stage",
+    "channelHeading": "Channel used",
+    "anyStage": "All",
+    "anyChannel": "Any",
+    "clear": "Clear filters"
+  },
+  "conversation": {
+    "stageLabel": "Recruitment stage",
+    "interactionSummary": "{{count}} interactions across {{channels}} channels",
+    "startCall": "Start a recorded call",
+    "callCandidate": "Call candidate",
+    "videoInterview": "Video interview",
+    "startVideo": "Start video interview",
+    "hideContext": "Hide candidate context",
+    "showContext": "Show candidate context",
+    "toggleContext": "Toggle candidate context",
+    "threadSearchPlaceholder": "Search this conversation, including call transcripts",
+    "showChannel": "Show {{channel}}",
+    "hideChannel": "Hide {{channel}}",
+    "matchCounter": "{{match}} of {{total}}",
+    "reset": "Reset",
+    "loadOlder": "Load earlier messages",
+    "loading": "Loading…",
+    "historyStart": "Beginning of the unified history",
+    "emptyTitle": "No conversation yet",
+    "emptyDescription": "Start the conversation with the composer below. Pick the channel the candidate actually replies on.",
+    "noMatchTitle": "No messages match",
+    "noMatchDescription": "Nothing on the visible channels matches this search. Call transcripts are searched too.",
+    "clearThreadFilters": "Clear search and channel filters",
+    "pickCandidateTitle": "Pick a candidate",
+    "pickCandidateDescription": "Every message, call and email with that person lands in one timeline here.",
+    "messageAria": "{{channel}} message {{direction}}",
+    "directionSent": "sent",
+    "directionReceived": "received",
+    "retry": "Retry",
+    "backToList": "Back to candidates"
+  },
+  "call": {
+    "outbound": "Outbound call",
+    "inbound": "Inbound call",
+    "aiSummary": "AI summary",
+    "transcriptTurns": "Transcript · {{count}} turns",
+    "openTranscript": "Open transcript",
+    "outcome": {
+      "completed": "Completed",
+      "missed": "Missed",
+      "voicemail": "Voicemail",
+      "no_answer": "No answer"
+    },
+    "dialogTitle": "Call transcript · {{name}}",
+    "dialogMeta": "{{timestamp}} · {{duration}} · {{direction}}",
+    "directionOutbound": "Outbound",
+    "directionInbound": "Inbound",
+    "searchTranscript": "Search inside this transcript",
+    "speakerRecruiter": "Recruiter",
+    "noTranscriptMatchTitle": "Nothing in this transcript matches",
+    "noTranscriptMatchDescription": "Try a shorter phrase, or search the whole conversation instead."
+  },
+  "composer": {
+    "to": "To",
+    "channelGroupLabel": "Send on channel",
+    "sendOnChannel": "Send on {{channel}}",
+    "placeholder": "Message {{name}} on {{channel}}…",
+    "subjectPlaceholder": "Subject for this {{channel}} message",
+    "unreachable": "{{name}} is not reachable on {{channel}}.",
+    "useInstead": "Use {{channel}} instead",
+    "degraded": "{{channel}} delivery is degraded right now. Messages may be delayed.",
+    "attach": "Attach a file",
+    "noAttachments": "{{channel}} does not support attachments",
+    "draftWithContext": "Draft with context",
+    "sendHintPrefix": "Press",
+    "sendHintSuffix": "to send · the channel shown on the button is the one that will be used",
+    "quickReplies": {
+      "shareBrief": "Share role brief",
+      "shareBriefText": "I've attached the full role brief — have a look and tell me what you think.",
+      "proposeTimes": "Propose times",
+      "proposeTimesText": "Would Thursday 14:00 or Friday 11:00 Gulf time work for the next conversation?",
+      "confirmInWriting": "Confirm in writing",
+      "confirmInWritingText": "Confirming in writing as promised: ",
+      "chasePolitely": "Chase politely",
+      "chasePolitelyText": "Just floating this back to the top of your inbox — no rush, whenever you have a moment."
+    }
+  },
+  "askGuard": {
+    "alreadyHave": "You already have this.",
+    "alreadyAsked": "You already asked for this.",
+    "askedOn": "{{label}} · asked on {{channel}} {{when}} ago",
+    "askedTimes": "asked {{count}}×",
+    "receivedVia": "received via",
+    "showMe": "Show me",
+    "dismiss": "Dismiss warning"
+  },
+  "requests": {
+    "sectionTitle": "Requests & commitments",
+    "openCount": "{{count}} open",
+    "allClear": "All clear",
+    "alreadyReceived": "Already received",
+    "empty": "Nothing has been requested from this candidate yet. Anything you ask for in the composer is tracked here automatically.",
+    "askedWhen": "asked {{when}} ago",
+    "viaChannel": "via {{channel}}",
+    "jumpToAsk": "Jump to where this was asked",
+    "jumpToAnswer": "Jump to where this arrived",
+    "markReceived": "Mark request as received",
+    "markOutstanding": "Mark as still outstanding",
+    "reopen": "Reopen request",
+    "label": {
+      "cv": "Updated CV",
+      "availability": "Interview availability",
+      "salary": "Salary expectation",
+      "notice_period": "Notice period",
+      "portfolio": "Portfolio link",
+      "references": "References",
+      "documents": "Documents",
+      "startDateRelocation": "Start date & relocation terms in writing"
+    }
+  },
+  "tasks": {
+    "sectionTitle": "Follow-ups",
+    "empty": "No follow-ups scheduled.",
+    "add": "Add follow-up",
+    "addPlaceholder": "What needs doing?",
+    "addConfirm": "Add",
+    "completed": "Completed",
+    "complete": "Complete task",
+    "reopen": "Reopen task"
+  },
+  "notes": {
+    "sectionTitle": "Notes",
+    "placeholder": "Private note — visible to your team, never to the candidate",
+    "save": "Save note",
+    "empty": "No notes yet."
+  },
+  "contacts": {
+    "sectionTitle": "Reachable on",
+    "noHandle": "No {{channel}} handle",
+    "copy": "Copy {{channel}} handle",
+    "write": "Write"
+  },
+  "stats": {
+    "sectionTitle": "Interaction history",
+    "empty": "No interactions recorded yet.",
+    "total": "Total",
+    "received": "Received",
+    "sent": "Sent",
+    "firstContact": "First contact",
+    "lastHeardFrom": "Last heard from"
+  },
+  "profile": {
+    "ownerLine": "Owner: {{owner}} · applied {{when}} ago",
+    "rejected": "Rejected · no further outreach scheduled",
+    "moveToStage": "Move to {{stage}}",
+    "sheetTitle": "Candidate context"
+  },
+  "common": {
+    "close": "Close",
+    "clearSearch": "Clear search",
+    "search": "Search",
+    "emDash": "—"
+  },
+  "blueprint": {
+    "badge": "Design rationale",
+    "title": "A single candidate communication interface",
+    "intro": "The goal is not to stack five chat windows in one tab. It is to give a recruiter the complete, trustworthy history of one person so they can act without re-reading anything or asking twice.",
+    "openPrototype": "Open the working prototype",
+    "layoutTitle": "Screen layout",
+    "layoutSubtitle": "Three panes: who you are talking to, what was said, and what you still owe them.",
+    "layoutBadge": "1440 × 900 reference",
+    "flowTitle": "Data flow",
+    "flowSubtitle": "Five different API shapes become one model before they ever reach a component.",
+    "flowBadge": "React · TypeScript · Zustand",
+    "problemsTitle": "Each recruiter pain point, and the thing on screen that answers it",
+    "problems": [
+      {
+        "problem": "The conversation jumps LinkedIn → WhatsApp → call → email → SMS",
+        "answer": "One chronological timeline per candidate. Each entry is labelled with its channel and direction, and an explicit marker is drawn where the conversation moved platform, with the gap in between."
+      },
+      {
+        "problem": "Asking for the CV twice on two different platforms looks bad",
+        "answer": "Every request is tracked as a commitment with the channel it was asked on and the channel it arrived on. Start typing a repeat ask and the composer warns before you send it, with a link to the proof."
+      },
+      {
+        "problem": "Context is spread over a hundred candidates and nobody remembers it",
+        "answer": "Search spans every channel, including call transcripts. The context rail keeps open requests, overdue follow-ups, notes and interaction history beside the thread instead of in someone's memory."
+      },
+      {
+        "problem": "A channel can be unavailable exactly when you need it",
+        "answer": "Per-candidate channel health is first class. An unreachable channel is disabled in the composer with the reason, and the last channel the candidate actually replied on is suggested instead."
+      },
+      {
+        "problem": "Five APIs, five payload shapes",
+        "answer": "Adapters normalize each provider into one TimelineEntry model. The UI renders one shape; channel-specific detail such as subject lines, transcripts and delivery receipts is preserved on the entry."
+      },
+      {
+        "problem": "Messages arrive while the recruiter is working",
+        "answer": "Inbound events append to the store and bump the unread count without stealing the current thread. Sends are optimistic and move through queued to sent to delivered, with retry on failure."
+      }
+    ],
+    "diagram": {
+      "layoutAria": "Three pane layout: candidate list, unified conversation, candidate context",
+      "flowAria": "Data flow from provider APIs through adapters and stores into the UI",
+      "chromeActions": "Workspace · Blueprint · Live · Theme",
+      "paneCandidates": "1 · CANDIDATES",
+      "paneConversation": "2 · UNIFIED CONVERSATION",
+      "paneContext": "3 · CANDIDATE CONTEXT",
+      "listSearch": "Search people and every message",
+      "listTabs": "All · Unread · Waiting · Filters",
+      "listFooter": "Stage · unread · needs reply · channels used",
+      "threadSearch": "Search this thread · hide or show each channel",
+      "dayChip": "Yesterday",
+      "linkedinReceived": "LINKEDIN · received",
+      "switchMarker": "LinkedIn → WhatsApp · 1d later",
+      "whatsappSent": "WHATSAPP · sent · read",
+      "callRow": "CALL · 12:24 · transcribed",
+      "openTranscript": "Open transcript",
+      "guardLine": "✓ You already have this — CV received via Email 5d ago · Show me",
+      "composerPlaceholder": "Type a message…",
+      "sendButton": "Send on WhatsApp",
+      "requestsHeading": "REQUESTS & COMMITMENTS",
+      "requestOpen": "○ Two references — asked Email 2d ago",
+      "requestCv": "✓ Updated CV — asked WA → got Email",
+      "requestAvailability": "✓ Availability — asked WA → got WA",
+      "requestsFooter": "Every ask carries the channel it came from",
+      "followUpsHeading": "FOLLOW-UPS",
+      "followUpOverdue": "☐ Confirm hybrid policy — overdue",
+      "followUpToday": "☐ Send calendar invite — today",
+      "reachableHeading": "REACHABLE ON",
+      "notesHeading": "NOTES · INTERACTION HISTORY",
+      "notesFooter": "22 interactions across 5 channels",
+      "sourcesHeading": "PROVIDER APIs",
+      "adaptersHeading": "ADAPTERS",
+      "storesHeading": "ZUSTAND STORES",
+      "uiHeading": "UI",
+      "adapterFile": "lib/adapters.ts",
+      "oneShape": "One shape out:",
+      "entryName": "TimelineEntry",
+      "realtimeNote": "Websocket / SSE events re-enter at the adapter layer — deduped by id, never by position"
+    }
+  }
+}

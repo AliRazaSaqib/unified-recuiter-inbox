@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-canvas: var(--app-canvas);
+  --color-surface: var(--app-surface);
+  --color-surface-raised: var(--app-surface-raised);
+  --color-surface-sunken: var(--app-surface-sunken);
+  --color-border-subtle: var(--app-border-subtle);
+  --color-border-strong: var(--app-border-strong);
+  --color-ink: var(--app-ink);
+  --color-ink-muted: var(--app-ink-muted);
+  --color-ink-faint: var(--app-ink-faint);
+  --color-accent: var(--app-accent);
+  --color-accent-soft: var(--app-accent-soft);
+  --color-accent-ink: var(--app-accent-ink);
+  --color-positive: var(--app-positive);
+  --color-positive-soft: var(--app-positive-soft);
+  --color-warning: var(--app-warning);
+  --color-warning-soft: var(--app-warning-soft);
+  --color-critical: var(--app-critical);
+  --color-critical-soft: var(--app-critical-soft);
+
+  --color-ch-whatsapp: var(--app-ch-whatsapp);
+  --color-ch-linkedin: var(--app-ch-linkedin);
+  --color-ch-email: var(--app-ch-email);
+  --color-ch-sms: var(--app-ch-sms);
+  --color-ch-call: var(--app-ch-call);
+
+  --radius-control: 10px;
+  --radius-panel: 16px;
+  --radius-bubble: 14px;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+:root {
+  --app-canvas: #f4f5f8;
+  --app-surface: #ffffff;
+  --app-surface-raised: #ffffff;
+  --app-surface-sunken: #eef0f4;
+  --app-border-subtle: #e4e7ec;
+  --app-border-strong: #cfd4dd;
+  --app-ink: #0d1117;
+  --app-ink-muted: #5b6472;
+  --app-ink-faint: #8b94a3;
+  --app-accent: #4f46e5;
+  --app-accent-soft: #eceaff;
+  --app-accent-ink: #ffffff;
+  --app-positive: #087443;
+  --app-positive-soft: #dcf5e8;
+  --app-warning: #9a5b00;
+  --app-warning-soft: #fdf0d9;
+  --app-critical: #be123c;
+  --app-critical-soft: #ffe4ea;
+
+  --app-ch-whatsapp: #1a9c54;
+  --app-ch-linkedin: #0a66c2;
+  --app-ch-email: #c5341f;
+  --app-ch-sms: #7c3aed;
+  --app-ch-call: #b45309;
+
+  --app-shadow-panel: 0 1px 2px rgb(13 17 23 / 0.04), 0 8px 24px -12px rgb(13 17 23 / 0.12);
+  --app-shadow-pop: 0 12px 40px -12px rgb(13 17 23 / 0.28);
+}
+
+:root[data-theme="dark"] {
+  --app-canvas: #090b11;
+  --app-surface: #10131b;
+  --app-surface-raised: #161a24;
+  --app-surface-sunken: #0c0e15;
+  --app-border-subtle: #222733;
+  --app-border-strong: #333a49;
+  --app-ink: #e9ecf3;
+  --app-ink-muted: #98a1b3;
+  --app-ink-faint: #6b7487;
+  --app-accent: #7c7bf5;
+  --app-accent-soft: #221f45;
+  --app-accent-ink: #0b0d14;
+  --app-positive: #3ddb91;
+  --app-positive-soft: #10301f;
+  --app-warning: #f0b45e;
+  --app-warning-soft: #332413;
+  --app-critical: #ff7b94;
+  --app-critical-soft: #391620;
+
+  --app-ch-whatsapp: #3ddb8b;
+  --app-ch-linkedin: #58a7f5;
+  --app-ch-email: #ff8a76;
+  --app-ch-sms: #b197fc;
+  --app-ch-call: #f5bd5c;
+
+  --app-shadow-panel: 0 1px 2px rgb(0 0 0 / 0.4), 0 10px 30px -14px rgb(0 0 0 / 0.7);
+  --app-shadow-pop: 0 18px 50px -16px rgb(0 0 0 / 0.75);
+}
+
+@layer base {
+  * {
+    border-color: var(--app-border-subtle);
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--app-canvas);
+    color: var(--app-ink);
+    font-family: var(--font-sans);
+    font-synthesis-weight: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button {
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+  }
+
+  input,
+  textarea {
+    font: inherit;
+    color: inherit;
+  }
+
+  ::selection {
+    background: var(--app-accent-soft);
+    color: var(--app-ink);
+  }
+}
+
+@layer utilities {
+  .shadow-panel {
+    box-shadow: var(--app-shadow-panel);
+  }
+
+  .shadow-pop {
+    box-shadow: var(--app-shadow-pop);
+  }
+
+  .scrollbar-slim {
+    scrollbar-width: thin;
+    scrollbar-color: var(--app-border-strong) transparent;
+  }
+
+  .scrollbar-slim::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-slim::-webkit-scrollbar-thumb {
+    background-color: var(--app-border-strong);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+
+  .scrollbar-slim::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .animate-rise {
+    animation: rise 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .animate-fade {
+    animation: fade 0.16s ease-out;
+  }
+
+  .animate-pop {
+    animation: pop 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

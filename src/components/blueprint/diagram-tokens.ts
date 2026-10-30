@@ -1,0 +1,9 @@
+export const PANE = "var(--app-surface)";
+export const SUNKEN = "var(--app-surface-sunken)";
+export const STROKE = "var(--app-border-strong)";
+export const INK = "var(--app-ink)";
+export const MUTED = "var(--app-ink-muted)";
+export const FAINT = "var(--app-ink-faint)";
+export const ACCENT = "var(--app-accent)";
+export const ACCENT_SOFT = "var(--app-accent-soft)";
+export const ACCENT_INK = "var(--app-accent-ink)";
