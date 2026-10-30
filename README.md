@@ -4,6 +4,8 @@ A single workspace where a recruiter sees **every** interaction with one candida
 LinkedIn, WhatsApp, email, SMS and transcribed phone calls — in one chronological
 timeline, and can reply on any of those channels without leaving the screen.
 
+**Live demo:** https://unified-recruiter-inbox.vercel.app
+
 ```bash
 npm install
 npm run dev      # http://localhost:5173
